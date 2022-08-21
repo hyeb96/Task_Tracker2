@@ -23,18 +23,20 @@ const taskSchema = {
 //create model
 const Task = mongoose.model("task", taskSchema)
 
-app.post("/tasks", (req, res) => {
+app.post("/", (req, res) => {
     let newTask = new Task({
         task: req.body.content
     });
     newTask.save();
-    res.redirect('/tasks');
+    res.redirect('/');
 })
 // app.use(express.static(__dirname + '/public'));
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
 
-app.get('/tasks', (req, res) => {
+
+
+app.get('/', (req, res) => {
     // res.sendFile(path.join(__dirname + '/index.html'));
     Task.find({}, function (err, tasks) {
         res.render('index', {
