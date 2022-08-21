@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="app">
+        <section class="create-todo">
+            <h3>Hello!</h3>
+            <form action='/tasks' method="post" id="new-todo-form">
+                <input type="text" placeholder="What do you have planned today?" name="content" id="content" required />
+                <input type="submit" class="button" value="ADD" />
+            </form>
+        </section>
+        <section class="todo-list">
+            <h4>Tasks</h4>
+            <div class="list" id="todo-list"></div>
+            <%taskList.forEach(task=> {%>
+                <p>
+                    <%=task.task%>
+                </p>
+                <%})%>
+        </section>
+    </main>
+    <script src="server.js"></script>
+</body>
+
+</html>

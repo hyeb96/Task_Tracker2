@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background-color: rgba(248, 174, 148, 0.286); */
+    background-image: url("wallpaper.png")
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+}
+
+.app {
+    background-color: rgba(137, 171, 155, 0.2);
+    height: auto;
+    max-width: 100vh;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h3 {
+    color: rgb(232, 157, 142);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(133, 157, 123);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
